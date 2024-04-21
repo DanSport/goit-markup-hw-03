@@ -150,7 +150,6 @@ button {
   border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
 }
 
-
 .header-list-title {
   font-size: 20px; 
   margin-bottom: 8px;
@@ -209,6 +208,8 @@ button {
 /* What are we doing*/
 .what-are-we .header-section{
   max-width: 360px;
+  margin:0 auto 72px;
+  text-align: center;
 }
 .what-are-list{
   display:flex;
@@ -219,6 +220,8 @@ button {
 .team .header-section{
 padding-top: 120px; 
 max-width: 162px;
+margin:0 auto 72px;
+text-align: center;
 }
 .team-list{
   display:flex;
@@ -307,6 +310,11 @@ overflow: hidden;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 100px; 
+  padding-left: 156px;
+}
+.footer .container{
+  
 }
 
 .logo {
@@ -328,10 +336,7 @@ overflow: hidden;
 .logospanbottom {
   color: var(--cloud);
 }
-.footer{
-padding-top: 100px; 
-padding-left: 156px;
-}
+
 .footer p{
   max-width: 264px;
   padding-top: 16px;
