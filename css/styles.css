@@ -24,7 +24,6 @@
   --indent-col: 24px;
   --indent-row: 48px;
   --items: 3;
-
 }
 
 /* Base styles */
@@ -70,13 +69,29 @@ p {
   text-align: left;
   font-size: 16px;
 }
+h2{
+  color: var(--NAVY-BLUE);
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 111.111% */
+letter-spacing: 0.72px;
+text-transform: capitalize;
+}
+
 
 .features,
 .what-are-we,
 .team {
   padding-bottom: 120px;
+  padding-top:120px;
 }
 
+.hero{
+  padding: 188px 0;
+}
 button {
   padding: 0;
 }
@@ -104,6 +119,8 @@ button {
   display: flex;
 }
 .header-menu-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex; 
   justify-content: space-between;
   gap: 40px;
@@ -116,6 +133,7 @@ button {
 .navigation {
   display: flex; 
   flex-grow: 1; 
+  align-items: center;
 }
 
 .navigation .link {
@@ -126,6 +144,7 @@ button {
   color: var(--navy-blue);
   text-decoration: none;
   font-style: normal;
+  
 }
 
 .navigation .link:active {
@@ -137,14 +156,20 @@ button {
   color: var(--ocean);
 }
 .navigation-adress{
-  padding-right: 156px;
+  
   font-family: Roboto;
   font-style: normal;
+  font-size: 16px;
+}
+.header-menu-adress .link{
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 16px;
 }
 .header-title {
   font-weight: 700;
   font-size: 56px;
-  padding-top: 188px;
+  
   padding-bottom: 48px;
   max-width: 496px;
   margin: auto;
@@ -176,6 +201,8 @@ button {
   background: var(--iris);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: var(--white);
+  cursor: pointer;
+  border:none;
   border-radius: 4px;
   color: var(--WHITE, #FFF);
  /* Button Text */
@@ -186,19 +213,15 @@ button {
  line-height: 150%;
  letter-spacing: 0.64px;
  padding: 16px 32px;
- margin-bottom: 188px;
 }
 
-.hero-button:hover {
-  background: var(--ocean);
-  color: var(--navy-blue); 
-}
+
 /* Features*/
 .features .container {
   display: flex;
 }
 .features {
-  padding-top: 120px;
+  padding-bottom: 0;
 }
 .features-list {
   display: flex;
@@ -209,10 +232,14 @@ button {
   max-width: 264px;  
 }
 /* What are we doing*/
+.what-are-we {
+  display: flex;
+  justify-content: center; 
+}
+
 .what-are-we .header-section{
   max-width: 360px;
-  margin:0 auto 72px;
-  text-align: center;
+  margin: 0 auto  72px;
 }
 .what-are-list{
   display:flex;
@@ -221,8 +248,7 @@ button {
 }
 /* TEAM*/
 .team .header-section{
-padding-top: 120px; 
-max-width: 162px;
+max-width: 360px;
 margin:0 auto 72px;
 text-align: center;
 }
@@ -231,22 +257,19 @@ text-align: center;
   gap:24px;
   align-items: center;
   text-align: center;  
-
+}
+.team-member-desc{
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .team-list .header-list{
   background-color: var(--white);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-
-
-
 }
-.team-list .header-list .header-list-title{
-padding-top: 32px;
-}
+
 .team-list .header-list p{
   text-align: center;
-  padding-bottom: 32px;
 }
 
 .button-norm {
@@ -272,7 +295,7 @@ padding-top: 32px;
   background: var(--cloud);
 }
 
-.products .container{
+.products {
  padding-top: 96px;
  padding-bottom: 120px;
 }
@@ -280,9 +303,19 @@ padding-top: 32px;
   display: flex;
   gap: 24px;
   margin: 0 auto;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   justify-content: center;
- 
+}
+.card-set .header-list{
+  text-align: start;
+  color: var(--NAVY-BLUE);
+  /* Header 3 */
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
 }
 .card-set{
   display:flex;
@@ -297,22 +330,22 @@ max-width: calc((100% - var(--indent-col) * 2) / 3);
 background: var(--WHITE, #FFF);
 overflow: hidden; 
 }
-.card-set-item .header-list{
-  padding-top: 32px;
+.card-set-item .card-set-desc{
   border-right: 1px solid var(--CORNFLOWER, #E7E9FC);
   border-left: 1px solid var(--CORNFLOWER, #E7E9FC);
+  border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
 }
 .card-set-item p{
- padding-top: 8px;
- padding-bottom: 32px; 
- border: 1px solid var(--CORNFLOWER, #E7E9FC);
- border-top: 0; 
+ padding-top: 8px; 
 }
 .card-set-item img {
     width: 100%; 
     box-sizing: border-box; /* Зображення враховує бордер та падінг */
 }
-
+.card-set-desc{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .footer {
   background-color: var(--navy-blue);
   color: var(--white);
@@ -325,7 +358,7 @@ overflow: hidden;
 
 .logo {
   margin-right: 76px;
-  padding: 25.5px 0;
+  
   font-family: var(--second-family), sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -345,6 +378,6 @@ overflow: hidden;
 
 .footer p{
   max-width: 264px;
-  padding-top: 16px;
+  margin-top: 17.5px;
   padding-bottom: 100px;
 }
