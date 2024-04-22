@@ -288,7 +288,7 @@ text-align: center;
 .button-norm:hover,
 .button-norm:focus {
   background: var(--ocean);
-  color: var(--navy-blue); 
+  color: var(--white); 
 }
 
 .team {
@@ -336,15 +336,15 @@ overflow: hidden;
   border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
 }
 .card-set-item p{
- padding-top: 8px; 
+ margin-top: 8px; 
 }
 .card-set-item img {
     width: 100%; 
     box-sizing: border-box; /* Зображення враховує бордер та падінг */
 }
 .card-set-desc{
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
+  
 }
 .footer {
   background-color: var(--navy-blue);
